@@ -44,6 +44,7 @@
         <div class="container mx-auto px-4">
             @yield('content')
         </div>
+        <livewire:girls-list />
     </main>
     <footer class="py-4 text-center">
         @auth
