@@ -2,7 +2,7 @@
     <div  class="cover-wrapper container mx-auto px-4">
       <div class="logo">
         <a href="#">
-          <img src="{{ url('storage/imgs/logo.png') }}" alt="Inicio"> <!-- Cambiar link por ruta -->
+          <img src="{{ url('storage/imgs/logos.png') }}" alt="Inicio"> <!-- Cambiar link por ruta -->
         </a>
       </div>
       <div class="titulo">
@@ -32,7 +32,7 @@
               </script>
           </div>
         </div>
-        <input type="submit" value="Buscar" class="btn btn-sm btn-default btn-buscar"/>
+        <input type="submit" value="Buscar" class="bg-pink-500 btn btn-sm btn-default btn-buscar"/>
       </form>
     </div>
   </div>
