@@ -15,6 +15,18 @@ class CreatePublicationsTable extends Migration
     {
         Schema::create('publications', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+
+            $table->string('title');
+            $table->text('description');
+            $table->string('phone');
+            $table->string('whats')->nullable();
+            $table->string('price');
+            $table->string('link')->nullable();
+            $table->boolean('active');
+            
+            $table->foreign('user_id')->references('id')->on('users');
+            
             $table->timestamps();
         });
     }
