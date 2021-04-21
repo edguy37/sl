@@ -21,9 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->string('whats')->nullable();
             $table->boolean('place');
-            $table->boolean('twitter')->nullable();
-            $table->boolean('instagram')->nullable();
-            $table->boolean('link')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('link')->nullable();
 
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
