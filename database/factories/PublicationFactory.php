@@ -24,7 +24,7 @@ class PublicationFactory extends Factory
         return [
             'title' => $this->faker->sentence(),
             'description' => $this->faker->text(),
-            'number' => $this->faker->phoneNumber(),
+            'phone' => $this->faker->phoneNumber(),
             'whats' => $this->faker->phoneNumber(),
             'price' => $this->faker->randomNumber(3,true),
             'link' => $this->faker->url(),
