@@ -1,3 +1,4 @@
+const { height } = require('tailwindcss/defaultTheme');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -13,7 +14,19 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
-        },
+            minWidth: {
+                '28': '7rem'
+           },
+           maxWidth: {
+               '28': '7rem'
+           },
+           width: {
+               '28': '7rem'
+           },
+           height: {
+               '28': '7rem'
+           }
+        }
     },
 
     variants: {
