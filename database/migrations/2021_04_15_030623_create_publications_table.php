@@ -23,6 +23,7 @@ class CreatePublicationsTable extends Migration
             $table->string('whats')->nullable();
             $table->string('price');
             $table->string('link')->nullable();
+            $table->string('slug')->unique();
             $table->boolean('active');
             
             $table->foreign('user_id')->references('id')->on('users');

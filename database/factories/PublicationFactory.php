@@ -23,11 +23,12 @@ class PublicationFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
-            'description' => $this->faker->text(),
+            'description' => $this->faker->text(800),
             'phone' => $this->faker->phoneNumber(),
             'whats' => $this->faker->phoneNumber(),
             'price' => $this->faker->randomNumber(3,true),
             'link' => $this->faker->url(),
+            'slug' => $this->faker->slug,
             'active' => rand(0,1),
             'user_id' => rand(1,4)
         ];
