@@ -18,9 +18,9 @@ class CreateUsersTable extends Migration
 
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('phone');
+            $table->string('phone')->default(123-123-12-12);
             $table->string('whats')->nullable();
-            $table->boolean('place');
+            $table->boolean('place')->default(1);
             $table->string('twitter')->nullable();
             $table->string('instagram')->nullable();
             $table->string('link')->nullable();
