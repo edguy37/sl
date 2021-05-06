@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Image;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 use App\Models\Publication;
@@ -17,5 +18,6 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(4)->create();
         Publication::factory(35)->create();
+        Image::factory(120)->create();
     }
 }
