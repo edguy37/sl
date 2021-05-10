@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sexy Love</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="shortcut icon" href="{{ asset('storage/imgs/logos.png') }}" type="image/x-icon">
 </head>
 <body>
     <header class="sticky top-0 z-20 shadow-lg">
