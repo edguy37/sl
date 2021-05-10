@@ -28,7 +28,7 @@
                         <x-jet-dropdown align="right" width="60">
                             <x-slot name="trigger">
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition bg-white border border-transparent rounded-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-600 transition bg-white border border-transparent rounded-md hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50">
                                         {{ Auth::user()->currentTeam->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -82,7 +82,7 @@
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-500 transition bg-white border border-transparent rounded-md hover:text-gray-700 focus:outline-none">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium leading-4 text-gray-700 transition bg-pink-300 border border-transparent rounded-md hover:text-gray-700 focus:outline-none">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -95,7 +95,7 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
-                            <div class="block px-4 py-2 text-xs text-gray-400">
+                            <div class="block px-4 py-2 text-xs text-gray-600">
                                 {{ __('Manage Account') }}
                             </div>
 
@@ -109,7 +109,7 @@
                                 </x-jet-dropdown-link>
                             @endif
 
-                            <div class="border-t border-gray-100"></div>
+                            <div class="border-t border-pink-200"></div>
 
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}">
