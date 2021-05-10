@@ -7,8 +7,11 @@
         </h1>
         {{ $publication->description }}
         @foreach ($publication->image as $image)
-        <img class="w-2/3 mx-auto" src="{{ $image->image }}" alt="">
+            <img class="w-2/3 mx-auto" src="{{ $image->image }}" alt="">
         @endforeach
         {{ $publication->prices }}
+        @if($publication->user->place)
+            <p>cuenta con lugar</p>
+        @endif
     </div>
 @endsection
