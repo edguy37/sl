@@ -46,18 +46,12 @@
         </div>
     </main>
     <footer class="py-4 text-center">
-        @auth
-            <a href="{{ url('dashboard') }}" class="text-sm text-gray-200 underline">
-                Dashboard
-            </a>
-        @else
-            <a href="{{ url('login') }}" class="text-sm text-gray-200 underline">
-                Login
-            </a>
-            <a href="{{ url('register') }}" class="ml-4 text-sm text-gray-200 underline">
-                Register
-            </a>
-        @endif
+        <ul class="flex justify-evenly">
+            <li>Política de privacidad</li>
+            <li>Condiciones de uso</li>
+            <li>Politica de cookies</li>
+            <li>Politica de pagos</li>
+        </ul>
     </footer>
 </body>
 </html>
